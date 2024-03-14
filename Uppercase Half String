@@ -1,0 +1,6 @@
+a=input("Enter a string:")
+half=int(len(a)/2)
+first_half=a[:half]
+last_half=a[half:].upper()
+result=first_half+last_half
+print(result)
