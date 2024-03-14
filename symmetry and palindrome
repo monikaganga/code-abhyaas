@@ -1,0 +1,24 @@
+a=input("Enter a string:")
+half=int(len(a)/2)
+first_half=a[:half]
+second_half=a[half:]
+if first_half==second_half:
+    print("symmetry")
+else:
+    print("Not a symmetry")
+string=[i for i in a]
+i=0
+j=len(string)-1
+while i<j:
+    string[i],string[j]=string[j],string[i]
+    i=i+1
+    j=j-1
+result=''.join(string)
+if a==result:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+
+    
+    
