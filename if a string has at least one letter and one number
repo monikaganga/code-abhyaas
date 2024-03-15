@@ -1,0 +1,7 @@
+a=input("Enter a string:")
+for i in a:
+    if i.isalpha() and i.isdigit():
+        print(True)
+        break
+else:
+    print(False)
