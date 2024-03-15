@@ -1,0 +1,15 @@
+a=input("Enter a string:")
+b=a.lower()
+dict={}
+for i in b:
+    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+        if i not in dict:
+            dict[i]=1
+        else:
+            dict[i]+=1
+print(dict)
+print(len(dict))
+if(len(dict)==5):
+    print("Accepted")
+else:
+    print("Not Accepted")
